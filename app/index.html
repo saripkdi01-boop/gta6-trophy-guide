@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — All 55 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PS5, with a roadmap to the platinum.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="page-head">
+  <div>
+    <h1>GTA 6 Trophy Guide &amp; Tracker</h1>
+    <p class="subtitle">Grand Theft Auto VI — PlayStation 5 · all 55 official trophies · works fully offline</p>
+  </div>
+  <div class="progress" id="progress" aria-live="polite">
+    <div class="progress-big"><span id="earned-count">0/55</span> <span id="earned-pct">0% to platinum</span></div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div class="grade-counts" id="grade-counts"></div>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="roadmap-panel">
+    <h2>Roadmap to the platinum</h2>
+    <p>Play in this order. The story trophies cannot be missed, but one side trophy can — read the warning in step 1.</p>
+    <ol class="roadmap" id="roadmap"></ol>
+    <div class="missable-box" id="missable-box">
+      <strong>⚠ Possibly missable — Positive Mental Attitude.</strong>
+      Meditate at all 18 spots across Leonida. Lucia's balcony meditation spot in Chapter 1 counts toward it and disappears after that chapter, and there is no mission replay. Meditate there before Chapter 1 ends, and keep a manual save at the start of every chapter plus one before the final mission.
+      <span class="src">Reported by OutputLag and EGamers; spot count from HowToVideoGame.</span>
+    </div>
+  </section>
+
+  <section class="panel" id="controls-panel">
+    <h2>Trophy checklist</h2>
+    <div class="controls">
+      <label>Search <input type="search" id="search" placeholder="Search by trophy name…"></label>
+      <label>Grade
+        <select id="filter-grade">
+          <option value="">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Category
+        <select id="filter-category">
+          <option value="">All categories</option>
+          <option value="story">Story</option>
+          <option value="side">Side</option>
+          <option value="collectible">Collectible</option>
+          <option value="activity">Activity</option>
+          <option value="combat">Combat</option>
+          <option value="exploration">Exploration</option>
+          <option value="misc">Misc</option>
+        </select>
+      </label>
+      <label>Visibility
+        <select id="filter-hidden">
+          <option value="">Hidden &amp; visible</option>
+          <option value="hidden">Hidden only</option>
+          <option value="visible">Visible only</option>
+        </select>
+      </label>
+      <label>Progress
+        <select id="filter-done">
+          <option value="">Done &amp; not done</option>
+          <option value="done">Earned</option>
+          <option value="todo">Not earned</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="filter-missable"> Missable only</label>
+      <label class="check"><input type="checkbox" id="spoiler"> Spoiler mode — hide un-earned hidden &amp; story trophies</label>
+    </div>
+    <div class="io">
+      <button type="button" id="export-btn">Export progress (JSON)</button>
+      <label class="import-label">Import progress (JSON)
+        <input type="file" id="import-file" accept=".json,application/json">
+      </label>
+      <button type="button" id="reset-btn">Reset progress</button>
+      <span id="io-status" role="status"></span>
+    </div>
+    <p class="count-line" id="count-line"></p>
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <section class="panel hidden" id="detail-panel" aria-live="polite">
+    <button type="button" id="detail-close">← Back to checklist</button>
+    <div id="detail"></div>
+  </section>
+
+  <section class="panel" id="about-panel">
+    <p>Names, descriptions and grades follow the official 55-trophy list as published on Exophase (18 Nov 2026): 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden, 27 visible; all single-player, none online. Each trophy guide is written in our own words and cites its source. The five trophies whose unlock method was unconfirmed at launch say so plainly instead of guessing. Estimated time to platinum: about 200 hours (HowToVideoGame).</p>
+    <p>Progress is stored only in your browser (localStorage). Nothing is uploaded anywhere.</p>
+  </section>
+</main>
+
+<footer><p>GTA 6 Trophy Guide — an offline fan guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
